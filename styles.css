@@ -14,7 +14,6 @@ width: 600px;
 
 #content {
 float: left;
-color: #333;
 /*background: #CCC;*/
 height: 350px;
 width: 400px;
@@ -24,9 +23,9 @@ line-height: 1.5;
 }
 
 #content a {
-    color: #73B8C4;
-    font-weight: bold;
-    text-decoration: none;
+color: #73B8C4;
+font-weight: bold;
+text-decoration: none;
 }
 
 #content div {
@@ -38,9 +37,9 @@ padding-right: 10px;
 
 #title {
 
-    position: relative;
-    width:199px; height:30px;
-    background:url("title.png") top right no-repeat;
+position: relative;
+width:199px; height:30px;
+background:url("title.png") top right no-repeat;
 
 }
 
@@ -56,19 +55,19 @@ color: #b2b2b2;
 }
 
 #footer div {
-    padding-top: 10px;
-    padding-right: 10px;
-    text-align: right;
+padding-top: 10px;
+padding-right: 10px;
+text-align: right;
 }
 
 #footer a {
-    color: #b2b2b2;
-    font-weight: bold;
-    text-decoration: none;
+color: #b2b2b2;
+font-weight: bold;
+text-decoration: none;
 }
 
 #footer div img {
-   border-style: none;
+border-style: none;
 }
 
 #rightcolumn {
@@ -85,5 +84,5 @@ margin: 0 auto;
 
 #rightcolumn img {
 position: absolute;
-bottom: 0;
+bottom: 0; right: 0;
 }
