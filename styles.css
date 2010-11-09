@@ -9,14 +9,14 @@ p { padding: 10px;}
 
 #wrapper {
 margin: 0 auto;
-width: 600px;
+width: 500px;
 }
 
 #content {
 float: left;
 /*background: #CCC;*/
 height: 350px;
-width: 400px;
+width: 300px;
 position: relative;
 color: #b2b2b2;
 line-height: 1.5;
@@ -46,12 +46,12 @@ background:url("title.png") top right no-repeat;
 #title span { display: none; }
 
 #footer {
-width: 400px;
+width: 300px;
 height: 100px;
 clear: both;
 color: #b2b2b2;
 
-/*background: #BBB;*/
+background: #BBB;
 }
 
 #footer div {
