@@ -2,7 +2,7 @@
 
 body {
 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-font-size: 18px;
+font-size: large;
 }
 
 p { padding: 10px;}
@@ -14,12 +14,13 @@ width: 500px;
 
 #content {
 float: left;
-/*background: #CCC;*/
 height: 350px;
 width: 300px;
 position: relative;
 color: #b2b2b2;
 line-height: 1.5;
+
+/*background: #CCC;*/
 }
 
 #content a {
@@ -36,11 +37,9 @@ padding-right: 10px;
 }
 
 #title {
-
 position: relative;
 width:199px; height:30px;
 background:url("title.png") top right no-repeat;
-
 }
 
 #title span { display: none; }
@@ -58,6 +57,7 @@ color: #b2b2b2;
 padding-top: 10px;
 padding-right: 10px;
 text-align: right;
+font-size: x-small;
 }
 
 #footer a {
@@ -75,11 +75,11 @@ color: #333;
 height: 350px;
 width: 200px;
 float: left;
-/*background: #AAA;*/
-
 text-align: right;
 position: relative;
 margin: 0 auto;
+
+/*background: #AAA;*/
 }
 
 #rightcolumn img {
