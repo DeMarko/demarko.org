@@ -1,2 +1,4 @@
 # Project file #
 *.esproj
+# blog backup
+blog.demarko.org/
