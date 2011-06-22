@@ -2,3 +2,5 @@
 *.esproj
 # blog backup
 blog.demarko.org/
+# ssh key
+sshkey.txt
