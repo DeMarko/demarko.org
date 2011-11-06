@@ -1,85 +1,68 @@
-* { padding: 0; margin: 0; }
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
 
 body {
-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-font-size: large;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: large;
 }
 
-p { padding: 10px;}
-
-#wrapper {
-margin: 0 auto;
-width: 500px;
+body a {
+	color: #73B8C4;
+	font-weight: bold;
+	text-decoration: none;
 }
 
-#content {
-float: left;
-height: 350px;
-width: 300px;
-position: relative;
-color: #b2b2b2;
-line-height: 1.5;
-
+#txt {
+	color: #B2B2B2;
+	line-height: 1.5;
+	text-align: right;
+	vertical-align: bottom;
 }
-
-#content a {
-color: #73B8C4;
-font-weight: bold;
-text-decoration: none;
-}
-
-#content div {
-text-align: right;
-position: absolute;
-bottom:  0; right: 0;
-padding-right: 10px;
-}
-
-#title {
-position: relative;
-width:199px; height:30px;
-background:url("title.png") top right no-repeat;
-}
-
-#title span { display: none; }
 
 #footer {
-width: 300px;
-height: 100px;
-clear: both;
-color: #b2b2b2;
+	clear: both;
+	color: #b2b2b2;
 }
 
-#footer div {
-padding-top: 10px;
-padding-right: 10px;
-text-align: right;
-font-size: x-small;
+#footer p {
+	float:none;
+	font-size: x-small;
+	text-align: right;
+}
+
+#footer img {
+	float: right;
+	padding-top: 4px;
+	padding-right: 4px;
+	border-style: none;
 }
 
 #footer a {
-color: #b2b2b2;
-font-weight: bold;
-text-decoration: none;
+	color: #b2b2b2;
+	font-weight: bold;
+	text-decoration: none;
 }
 
-#footer div img {
-border-style: none;
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
 }
 
-#rightcolumn {
-color: #333;
-height: 350px;
-width: 200px;
-float: left;
-text-align: right;
-position: relative;
-margin: 0 auto;
 
-/*background: #AAA;*/
-}
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
 
-#rightcolumn img {
-position: absolute;
-bottom: 0; right: 0;
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
 }
