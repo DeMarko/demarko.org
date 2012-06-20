@@ -2,6 +2,7 @@
 *.esproj
 # blog backup
 blog.demarko.org/
+tuned.demarko.org/
 # ssh key
 sshkey.txt
 # jquery
