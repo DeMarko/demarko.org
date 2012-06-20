@@ -2,9 +2,20 @@
 /* ! Layout for desktop version   */
 /* ============================== */
 
+@font-face {
+    font-family: 'FFF Harmony';
+    src: url('fonts/fffharmony-webfont.eot');
+    src: url('fonts/fffharmony-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fffharmony-webfont.woff') format('woff'),
+         url('fonts/fffharmony-webfont.ttf') format('truetype'),
+         url('fonts/fffharmony-webfont.svg#FFFHarmonyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: large;
+	font-family: 'FFF Harmony', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: medium;
 }
 
 body a {
@@ -44,6 +55,9 @@ body a {
 	text-decoration: none;
 }
 
+.name {
+    color: black;
+}
 
 /* ============================= */
 /* ! Layout for mobile version   */
