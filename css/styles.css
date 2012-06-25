@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: 'FFF Harmony';
-    src: url('fonts/fffharmony-webfont.eot');
-    src: url('fonts/fffharmony-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/fffharmony-webfont.woff') format('woff'),
-         url('fonts/fffharmony-webfont.ttf') format('truetype'),
-         url('fonts/fffharmony-webfont.svg#FFFHarmonyRegular') format('svg');
+    src: url('../fonts/fffharmony-webfont.eot');
+    src: url('../fonts/fffharmony-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fffharmony-webfont.woff') format('woff'),
+         url('../fonts/fffharmony-webfont.ttf') format('truetype'),
+         url('../fonts/fffharmony-webfont.svg#FFFHarmonyRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
