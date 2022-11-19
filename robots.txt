@@ -1,0 +1,7 @@
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: *
+
+Allow: /twitter-image.png
