@@ -1,0 +1,156 @@
+/* DEFAULT VARIABLES */
+body {
+  --block-text-color: #222;
+  --block-background-color: #fff;
+  --block-accent-color: #00ae86;
+  --block-shadow-color: #444;
+}
+
+/* BASIC BLOCK STYLES */
+.blocks {
+  display: block;
+  color: var(--block-text-color);
+  border: 3px solid var(--block-text-color);
+  border-radius: 3px;
+  padding: 4px 8px;
+  background: var(--block-background-color);
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  position: relative;
+  top: -2px;
+  left: -2px;
+  transition: transform 0.2s;
+  margin: 8px 6px 10px 6px;
+  z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.blocks.wrapper,
+.blocks.wrapper.binline {
+  display: inline-block;
+  padding: 0;
+}
+
+.blocks.wrapper > * {
+  margin: 0;
+}
+
+/* INTERACTIVE BLOCK STYLES */
+.blocks::before {
+  content: "";
+  background: var(--block-background-color);
+  border: 3px solid var(--block-text-color);
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  z-index: -1;
+}
+
+.blocks:hover,
+.blocks:focus {
+  transform: translate(2px, 2px);
+}
+
+.blocks::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: var(--block-shadow-color);
+  border: 3px solid var(--block-text-color);
+  border-radius: 3px;
+  height: calc(100% + 6px);
+  width: calc(100% + 6px);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 0;
+  z-index: -2;
+  transition: transform 0.2s;
+}
+
+.blocks:hover::after,
+.blocks:focus::after {
+  transform: translate(-2px, -3px);
+}
+
+.blocks:active {
+  color: var(--block-text-color);
+  transform: translate(3px, 3px);
+}
+
+.blocks:active::after {
+  transform: translate(-4px, -4px);
+}
+
+.blocks:focus {
+  outline: none;
+}
+
+.blocks.bfixed {
+  cursor: initial !important;
+}
+
+/* FIXED STYLES */
+.blocks.bfixed:hover,
+.blocks.bfixed:hover::before,
+.blocks.bfixed:hover::after,
+.blocks.bfixed:active,
+.blocks.bfixed:active::before,
+.blocks.bfixed:active::after,
+.blocks.bfixed:focus,
+.blocks.bfixed:focus::before,
+.blocks.bfixed:focus::after {
+  transform: none !important;
+}
+
+/* ACCENT STYLES */
+.blocks.accent {
+  color: var(--block-background-color);
+  background: var(--block-accent-color);
+}
+
+.blocks.accent::before {
+  background: var(--block-accent-color);
+}
+
+/* INLINE STYLES */
+.blocks.binline {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 0 6px;
+  margin: 3px 2px 1px 4px;
+}
+.blocks.binline::after {
+  top: -1px;
+  left: -1px;
+}
+.blocks.binline:hover,
+.blocks.binline:focus {
+  transform: translate(1px, 1px);
+}
+.blocks.binline:hover::after,
+.blocks.binline:focus::after {
+  transform: translate(-1px, -1px);
+}
+.blocks.binline:active {
+  transform: translate(2px, 2px);
+}
+
+/* ROUND STYLES */
+.blocks.bround,
+.blocks.bround::before,
+.blocks.bround::after {
+  border-radius: 30px;
+}
+
+.blocks.bround::after {
+  left: 1px;
+}
